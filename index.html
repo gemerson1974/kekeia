@@ -1,68 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mensagem com imagem</title>
-  <style>
-    /* Estilos para centralizar o conteúdo e adicionar margens */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do container */
-    }
-    img {
-      width: 300px; /* Tamanho da imagem */
-      height: auto;
-      border-radius: 50%; /* Deixa a imagem circular */
-      margin-bottom: 20px; /* Margem abaixo da imagem */
-    }
-	
-	 h1 {
-      font-size: 2.5em; /* Tamanho da fonte */
-      color: #333; /* Cor do texto */
-      text-transform: uppercase; /* Transforma o texto em maiúsculas */
-      animation: glow 2s ease-in-out infinite alternate; /* Efeito de brilho */
-    }
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #FFD700; /* Sombra inicial (cor amarela) */
-      }
-      to {
-        text-shadow: 0 0 20px #FF6347; /* Sombra final (cor vermelha) */
-      }
-	  
-	  
-	 /* Estilo para a mensagem com tamanho de fonte 14px */
-    p {
-      font-size: 18px;
-    } 
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Josicleia</h1>
-    <img src="amor.jpeg" alt="Imagem">
-    <p>"Meu amor, hoje é um dia especial, pois celebramos o dia em que uma pessoa maravilhosa veio ao mundo: você<br> Parabéns pelo seu aniversário!<br>Que este dia seja tão radiante e cheio de alegria quanto a luz que você irradia em minha vida.<br>
-Você é a razão do meu sorriso diário, a inspiração por trás de cada conquista e a força que me impulsiona nos momentos desafiadores.<br> Você é um presente inestimável que agradeço todos os dias.<br>
-Que este novo ano que se inicia seja repleto de realizações, sonhos concretizados e momentos felizes.<br> Que a felicidade seja constante e que todos os seus desejos se realizem, pois você merece todo o amor e alegria do mundo.<br>
-Feliz aniversário, meu amor! Que nossa jornada, juntos, seja cada vez mais real e repleta de amor, cumplicidade e momentos inesquecíveis.<br> Você é o melhor presente que a vida me deu, e eu sou eternamente grato por tê-la conhecida. Te gosto, te adoro e te amo também né!"</p>
-Gemerson
-  </div>
-</body>
-</html>
+  <main>
+    <h2>Filmes Populares</h2>
+    <div class="input-container">
+      <input type="text" name="movie-name" id="movie-name" placeholder="Digite algum filme para pesquisar...">
+      <img src="images/search-icon.svg" alt="Ícone de pesquisa" class="searchIcon">
+    </div>
+    <div class="showOnlyFavorites">
+      <input type="checkbox" name="onlyFavorites" id="onlyFavorites">
+      <label for="onlyFavorites">Mostrar apenas meus filmes favoritos</label>
+    </div>
+    <div class="movies">
+      <div class="movie">
+        <div class="movie-informations">
+          <div class="movie-image">
+            <img src="https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg" alt="Batman (2022)"/>
+          </div>
+          <div class="movie-text">
+            <h4>Batman (2022)</h4>
+            <div class="rating-favorites">
+              <div class="rating">
+                <img src="images/star.png" alt="Star Icon"/>
+                <span>9.2</span>
+              </div>
+              <div class="favorite">
+                <img src="images/heart.svg" alt="Star Icon"/>
+                <span>Favoritar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-description">
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
 
-    
-    <p>
-</p>
-  </div>
+      <div class="movie">
+        <div class="movie-informations">
+          <div class="movie-image">
+            <img src="https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg" alt="Batman (2022)"/>
+          </div>
+          <div class="movie-text">
+            <h4>Batman (2022)</h4>
+            <div class="rating-favorites">
+              <div class="rating">
+                <img src="images/star.png" alt="Star Icon"/>
+                <span>9.2</span>
+              </div>
+              <div class="favorite">
+                <img src="images/heart.svg" alt="Star Icon"/>
+                <span>Favoritar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-description">
+          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+
+      <div class="movie">
+        <div class="movie-informations">
+          <div class="movie-image">
+            <img src="https://img.elo7.com.br/product/original/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg" alt="Batman (2022)"/>
+          </div>
+          <div class="movie-text">
+            <h4>Batman (2022)</h4>
+            <div class="rating-favorites">
+              <div class="rating">
+                <img src="images/star.png" alt="Star Icon"/>
+                <span>9.2</span>
+              </div>
+              <div class="favorite">
+                <img src="images/heart.svg" alt="Star Icon"/>
+                <span>Favoritar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-description">
+          <span>Lorem Ipsum is simply Lar dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
